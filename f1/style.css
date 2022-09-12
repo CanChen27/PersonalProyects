@@ -1,0 +1,243 @@
+/* Dicho proyecto no va a usar flex-box */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.w {
+  width: 1200px;
+  margin: auto;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+/* header */
+
+.header {
+  height: 42px;
+  margin: 30px auto;
+}
+
+.logo {
+  float: left;
+  width: 198px;
+  height: 42px;
+  background-color: #ccc;
+}
+
+.nav {
+  float: left;
+  margin-left: 60px;
+}
+
+.nav ul li {
+  float: left;
+  margin: 0 15px;
+}
+
+.nav ul li a {
+  display: block;
+  height: 42px;
+  padding: 0 10px;
+  line-height: 42px;
+  font-size: 18px;
+  color: #999;
+}
+
+.nav ul li:hover {
+  border-bottom: 2px solid #333;
+  color: #333;
+}
+
+.search {
+  float: left;
+  width: 412px;
+  height: 42px;
+  /* background-color: #ccc; */
+  margin-left: 50px;
+}
+
+.search input {
+  float: left;
+  width: 345px;
+  height: 40px;
+  border: 1px solid #999;
+  border-right: 0;
+  font-size: 14px;
+  padding-left: 15px;
+}
+
+.search button {
+  display: flex;
+  width: 50px;
+  height: 42px;
+  background-color: #666;
+  border: 0;
+}
+
+.user {
+  float: right;
+  line-height: 42px;
+  margin-right: 30px;
+  width: auto;
+}
+
+.user img {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  background-color: #999;
+}
+
+.user span {
+  display: inline-block;
+}
+
+/* banner */
+
+.banner {
+  height: 420px;
+  background-color: #999;
+}
+
+.banner .w {
+  background-color: #666;
+  height: inherit;
+}
+
+.subNav {
+  float: left;
+  height: 420px;
+  width: 190px;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.subNav ul li {
+  height: 45px;
+  line-height: 45px;
+  padding: 0 20px;
+}
+
+.subNav ul li a {
+  font-size: 14px;
+  color: #999;
+}
+
+.subNav ul li a:hover {
+  color: #fff;
+}
+
+.subNav ul li a span {
+  float: right;
+}
+
+.offer {
+  float: right;
+  width: 230px;
+  height: 300px;
+  background-color: #ccc;
+  /* 浮动没有外边距合并问题 */
+  margin-top: 50px;
+}
+
+.offer h2 {
+  height: 48px;
+  text-align: center;
+  line-height: 48px;
+  background-color: #999;
+  font-size: 18px;
+  color: #fff;
+}
+
+.bdy {
+  padding: 0 20px;
+}
+
+.bdy ul li {
+  padding: 15px 0;
+  border-bottom: 1px solid #999;
+}
+
+.bdy ul li h4 {
+  font-size: 16px;
+  color: #333;
+}
+
+.bdy ul li p {
+  font-size: 12px;
+  color: #666;
+}
+.more {
+  display: block;
+  height: 38px;
+  border: 1px solid #333;
+  margin: 10px 0;
+  text-align: center;
+  line-height: 38px;
+  color: #333;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+/* suggest */
+
+.suggest {
+  height: 60px;
+  background-color: #fff;
+  margin-top: 10px;
+  box-shadow: 0 2px 3px 3px rgba(0, 0, 0, 0.1);
+
+  /* Alinar todos los elementos hijo */
+  line-height: 60px;
+}
+
+.suggest h3 {
+  /* no usamos padding en .suggest porque 
+  no usamos box-sizing, por eso le damos 
+  margin al hijo */
+  float: left;
+  margin-left: 30px;
+  font-size: 16px;
+  color: #333;
+}
+
+.suggest ul {
+  float: left;
+  margin-left: 30px;
+}
+
+.suggest ul li {
+  float: left;
+  font-size: 16px;
+  color: #999;
+}
+
+.suggest ul li a {
+  padding: 0 30px;
+  font-size: 16px;
+  color: #999;
+  border-left: 1px solid #666;
+}
+
+.suggest ul li a:hover {
+  color: #333;
+}
+
+.suggest ul li .last {
+  border-right: 1px solid #666;
+}
+
+.suggest .mod {
+  float: right;
+  margin: 0 30px;
+}
