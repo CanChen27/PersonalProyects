@@ -7,6 +7,8 @@
 
 body {
   font-family: Arial, Helvetica, sans-serif;
+  background-color: #f6f6f6;
+  height: 3000px;
 }
 
 .w {
@@ -21,6 +23,13 @@ li {
 a {
   text-decoration: none;
 }
+
+.iccc {
+  font-family: "icomoon";
+  font-size: 40px;
+  color: white;
+}
+
 /* header */
 
 .header {
@@ -126,14 +135,15 @@ a {
   height: 45px;
   line-height: 45px;
   padding: 0 20px;
+  color: #999;
 }
 
 .subNav ul li a {
   font-size: 14px;
-  color: #999;
+  color: inherit;
 }
 
-.subNav ul li a:hover {
+.subNav ul li:hover {
   color: #fff;
 }
 
@@ -198,7 +208,7 @@ a {
   box-shadow: 0 2px 3px 3px rgba(0, 0, 0, 0.1);
 
   /* Alinar todos los elementos hijo */
-  line-height: 60px;
+  /* line-height: 60px; */
 }
 
 .suggest h3 {
@@ -207,6 +217,7 @@ a {
   margin al hijo */
   float: left;
   margin-left: 30px;
+  margin-top: 20px;
   font-size: 16px;
   color: #333;
 }
@@ -219,6 +230,8 @@ a {
 .suggest ul li {
   float: left;
   font-size: 16px;
+  margin-top: 20px;
+
   color: #999;
 }
 
@@ -238,6 +251,244 @@ a {
 }
 
 .suggest .mod {
+  color: #999;
   float: right;
   margin: 0 30px;
+  margin-top: 15px;
+  padding: 5px;
+}
+
+.suggest .mod:hover {
+  color: #333;
+  border: 1px solid #333;
+  border-radius: 15%;
+}
+
+/* box */
+
+.box {
+  /* background-color: lightskyblue; */
+  margin-top: 30px;
+}
+
+.box-hd {
+  /* hay que ponerle un alto
+  para que el float no afecte a los elementos
+  que esten abajo */
+  height: 45px;
+}
+
+.box-hd h3 {
+  float: left;
+  font-size: 20px;
+}
+
+.box-hd a {
+  float: right;
+  font-size: 12px;
+}
+
+.box-bd {
+  height: 570px;
+}
+
+.box-bd ul {
+  width: 1225px;
+}
+
+.box-bd ul li {
+  float: left;
+  height: 270px;
+  width: 228px;
+  background-color: #f1f1f1;
+  margin-right: 15px;
+  margin-bottom: 15px;
+}
+
+.box-bd ul li .img {
+  background-color: #999;
+  width: 100%;
+  height: 60%;
+}
+
+.box-bd ul li h4 {
+  margin: 20px 20px 20px 25px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.box-bd .info p {
+  margin: 0 20px 0 25px;
+  font-size: 12px;
+  color: #999;
+}
+
+/* box2 */
+
+.box2 {
+  /* background-color: lightskyblue; */
+  margin-top: 30px;
+}
+
+.box2-hd {
+  /* hay que ponerle un alto
+  para que el float no afecte a los elementos
+  que esten abajo */
+  height: 45px;
+}
+
+.box2-hd h3 {
+  float: left;
+  font-size: 20px;
+}
+
+.box2-hd a {
+  float: right;
+  font-size: 12px;
+}
+
+.box2-bd {
+  height: 570px;
+  width: 1240px;
+}
+
+.box2-bd .leftBar {
+  float: left;
+  height: 555px;
+  width: 228px;
+  margin-right: 15px;
+  background-color: #999;
+}
+
+.box2-bd ul {
+  float: left;
+  width: 997px;
+}
+
+.box2-bd ul li {
+  float: left;
+  height: 270px;
+  width: 228px;
+  background-color: #f1f1f1;
+  margin-right: 15px;
+  margin-bottom: 15px;
+}
+
+.box2-bd ul li .img {
+  background-color: #999;
+  width: 100%;
+  height: 60%;
+}
+
+.box2-bd ul li h4 {
+  margin: 20px 20px 20px 25px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.box2-bd .info p {
+  margin: 0 20px 0 25px;
+  font-size: 12px;
+  color: #999;
+}
+
+/* box3 */
+
+.box3 {
+}
+
+.box3-hd {
+  height: 45px;
+  /* background-color: lightblue; */
+}
+
+.box3-hd h3 {
+  float: left;
+  font-size: 20px;
+}
+
+.box3-hd ul {
+  float: left;
+  margin-left: 320px;
+  margin-top: 5px;
+}
+
+.box3-hd ul li {
+  float: left;
+  margin-left: 30px;
+}
+
+.box3-hd ul li a {
+  color: #999;
+  font-size: 14px;
+  padding: 5px 20px;
+}
+
+.box3-hd ul li a:hover {
+  color: #333;
+}
+
+.box3-hd .box3_link {
+  float: right;
+  font-size: 12px;
+  color: #999;
+  margin-top: 10px;
+}
+
+.box3-hd a:hover {
+  color: #333;
+}
+
+.box3-bd {
+  height: 570px;
+  width: 1240px;
+}
+
+.box3-bd .leftBar {
+  float: left;
+  height: 385px;
+  width: 228px;
+  background-color: #999;
+  margin-right: 15px;
+}
+.box3-bd .cont {
+  float: left;
+}
+
+.box3-bd .cont .cont_hd {
+  height: 100px;
+  width: 955px;
+  background-color: #999;
+  margin-bottom: 15px;
+}
+
+.box3-bd ul {
+  float: left;
+  width: 997px;
+}
+
+.box3-bd ul li {
+  float: left;
+  height: 270px;
+  width: 228px;
+  background-color: #f1f1f1;
+  margin-right: 15px;
+}
+
+.box3-bd ul li .img {
+  background-color: #999;
+  width: 100%;
+  height: 60%;
+}
+
+.box3-bd ul li h4 {
+  margin: 20px 20px 20px 25px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.box3-bd .info p {
+  margin: 0 20px 0 25px;
+  font-size: 12px;
+  color: #999;
 }
