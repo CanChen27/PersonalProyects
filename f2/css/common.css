@@ -92,23 +92,24 @@ header .logo {
   position: absolute;
   top: 25px;
   left: 346px;
-  width: 538px;
-  height: 36px;
+  width: 537px;
+  height: 35px;
   border: 2px solid #b1191a;
 }
 
 .search input {
   float: left;
   width: 454px;
-  height: 32px;
+  height: 31px;
   padding-left: 10px;
 }
 
 .search button {
   float: left;
-  width: 80px;
+  width: 79px;
   height: 32px;
   background-color: #b1191a;
+  border: 0;
 
   color: #fff;
 }
@@ -198,7 +199,127 @@ header .logo {
 }
 
 .dropDown .dd {
+  display: none;
   width: 210px;
   height: 465px;
   background-color: #c81623;
+}
+
+.dropDown .dd ul li {
+  position: relative;
+
+  height: 31px;
+  line-height: 31px;
+  margin-left: 2px;
+  padding-left: 5px;
+}
+
+.dropDown .dd ul li:hover {
+  background-color: #fff;
+}
+
+.dropDown .dd ul li a {
+  font-size: 14px;
+  color: #fff;
+}
+
+.dropDown .dd ul li:hover a {
+  color: #c81623;
+}
+
+.dropDown .dd ul li::after {
+  position: absolute; /*padre relative hijo absoluto*/
+  top: 1px;
+  right: 10px;
+  color: #fff;
+  font-family: "icomoon";
+  /* content: "\e952"; */
+  content: "\e951";
+  margin-left: 6px;
+}
+
+.navItems ul li {
+  float: left;
+}
+
+.navItems ul li a {
+  display: block;
+  height: 45px;
+  line-height: 45px;
+  padding: 0 25px;
+}
+
+/* footer */
+
+.footer {
+  height: 415px;
+  background-color: #f5f5f5;
+  padding-top: 30px;
+}
+
+.modService {
+  height: 80px;
+  border-bottom: 1px solid #ccc;
+}
+
+.modService ul li {
+  float: left;
+  width: 300px;
+  height: 50px;
+  background-color: lightcyan;
+  padding-left: 35px;
+}
+
+.modService ul li h5 {
+  float: left;
+  height: 50px;
+  width: 50px;
+  background-color: #b1191a;
+  margin-right: 8px;
+  border-radius: 50%;
+}
+
+.serviceTxt h4 {
+}
+
+.serviceTxt p {
+  font-size: 12px;
+}
+
+.modHelp {
+  height: 185px;
+  border-bottom: 1px solid #ccc;
+  padding-top: 20px;
+  padding-left: 50px;
+}
+
+.modHelp dl {
+  float: left;
+  width: 200px;
+}
+
+.modHelp dl:last-child {
+  width: 90px;
+}
+
+.modHelp dl dt {
+  margin-bottom: 10px;
+}
+
+.modHelp dl dd {
+  font-size: 14px;
+  padding: 2px;
+}
+
+.modCopyright {
+  text-align: center;
+  padding-top: 20px;
+}
+
+.modCopyright .links {
+  margin-bottom: 15px;
+}
+
+.modCopyright .copyright {
+  line-height: 20px;
 }
