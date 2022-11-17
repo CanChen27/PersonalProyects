@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+
+  // box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+@lightColor: #cdd5f7;
+@darkColor: #646b8a;
+@activeColor: #6b5bfd;
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 100vh;
+  background-color: #f8f9ff;
+  // background-color: #2037bc;
+}
+
+.container {
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .content {
+    display: flex;
+    flex-wrap: wrap;
+    li {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      width: 100px;
+      height: 100px;
+
+      padding: 10px;
+      i {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        width: 70px;
+        height: 70px;
+
+        border-radius: 8px;
+        font-size: 30px;
+        color: @darkColor;
+        background-color: #fff;
+
+        cursor: pointer;
+
+        transition: all 0.3s;
+        box-shadow: 0 16px 32px rgba(90, 100, 130, 0.1);
+        &:hover {
+          color: @activeColor;
+          transform: scale(1.2);
+        }
+      }
+      p {
+        font-size: 13px;
+        color: @lightColor;
+      }
+    }
+  }
+
+  .pagination {
+    display: flex;
+    height: 50px;
+    align-items: center;
+    background-color: #fff;
+    box-shadow: 0 16px 32px rgba(90, 100, 130, 0.1);
+    border-radius: 8px;
+    li {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 25px;
+      width: 25px;
+      margin: 10px;
+      font-size: 14px;
+      border-radius: 5px;
+      // background-color: lightblue;
+      transition: all 0.3s;
+      &.page-btn {
+        color: @lightColor;
+        font-size: 22px;
+
+        &.isClick {
+          color: @activeColor;
+
+          &:hover {
+            color: #fff;
+            background-color: @darkColor;
+          }
+        }
+      }
+
+      &.page-number {
+        color: @darkColor;
+        cursor: pointer;
+
+        &:hover {
+          color: #fff;
+          background-color: @activeColor;
+          font-weight: bold;
+        }
+
+        &.active {
+          color: #fff;
+          background-color: @activeColor;
+          font-weight: bold;
+          cursor: default;
+        }
+      }
+
+      &.page-dot{
+        color: @lightColor;
+        font-size: 18px;
+
+        &:hover{
+          color: @activeColor;
+        }
+
+        &::after{
+          content: "more_horiz";
+        }
+
+        &.page-dot-prev:hover{
+          &::after{
+            content: "first_page";
+          }
+        }
+
+        &.page-dot-next:hover{
+          &::after{
+            content: "last_page";
+          }
+        }
+      }
+    }
+  }
+}

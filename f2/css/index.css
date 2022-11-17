@@ -1,0 +1,36 @@
+.main {
+  width: 980px;
+  height: 455px;
+  background-color: lightblue;
+  margin-left: 220px;
+  margin-top: 8px;
+}
+
+.focus {
+  float: left;
+  width: 721px;
+  height: 455px;
+  background-color: lightcoral;
+}
+
+.newsFlash {
+  float: left;
+  width: 250px;
+  height: 455px;
+  background-color: skyblue;
+}
+
+.news {
+  height: 165px;
+  background-color: lightgreen;
+}
+
+.lifeService {
+  height: 209px;
+  background-color: lightgoldenrodyellow;
+}
+
+.bargain {
+  height: auto;
+  background-color: lightpink;
+}
