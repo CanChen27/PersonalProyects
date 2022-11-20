@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.pic {
+  width: 1920px;
+  height: 1080px;
+  position: absolute;
+}
+
+.bot {
+  width: 100%;
+  height: 100%;
+  background: url("./bot.jpg");
+  background-repeat: no-repeat;
+  /* Scales the image (while preserving its 
+  ratio) to the smallest possible size to fill 
+  the container (that is: both its height and 
+  width completely cover the container), 
+  leaving no empty space. If the proportions 
+  of the background differ from the element, 
+  the image is cropped either vertically or horizontally. */
+
+  background-size: cover;
+
+  /* The background is fixed relative to the viewport. 
+  Even if an element has a scrolling mechanism,
+   the background doesn't move with the element */
+  background-attachment: fixed;
+}
+
+.top {
+  width: 100%;
+  height: 100%;
+  background: url("./top.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  position: absolute;
+  right: 0;
+}
+
+.line {
+  width: 5px;
+  height: 100vh;
+  background: #5b627c;
+  position: absolute;
+  z-index: 999;
+}
+
+.line:hover {
+  cursor: e-resize;
+}

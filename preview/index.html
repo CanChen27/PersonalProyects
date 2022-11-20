@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css" />
+    <script src="./jquery.js"></script>
+    <title>Preview</title>
+  </head>
+  <body>
+    <!-- https://www.bilibili.com/video/BV1zb4y1h7WB/?spm_id_from=333.999.0.0&vd_source=21484025a8b8432e29b58943549d2fc8 -->
+    <div class="pic">
+      <div class="bot">
+        <div class="line"></div>
+        <div class="top"></div>
+      </div>
+    </div>
+    <script>
+      $(document).ready(function () {
+        $(".bot").mousemove(function () {
+          $val = event.clientX;
+
+          if ($val <= 1915 && $val >= 0) {
+            $(".line").css("left", $val);
+            $(".top").css("width", 1920 - $val);
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
